@@ -33,7 +33,7 @@ export function CreateRoomForm() {
     return (
         <Card>
             <CardHeader>
-                <CardTitle>
+                <CardTitle> 
                     Criar sala
                 </CardTitle>
                 <CardDescription>
