@@ -1,52 +1,75 @@
 # Front End Agents
 
-Projeto front-end utilizando React 19, Vite e TypeScript.
+Aplicação React moderna para criação de salas de chat com IA, permitindo fazer perguntas e receber respostas inteligentes em tempo real.
 
-## Principais Bibliotecas
-- **React** (19.x)
-- **React DOM** (19.x)
-- **React Router DOM** (7.x) — roteamento
-- **@tanstack/react-query** — gerenciamento de dados assíncronos
-- **TailwindCSS** (4.x) — estilização utilitária
-- **Radix UI** — componentes acessíveis
-- **Lucide React** — ícones
-- **class-variance-authority, clsx, tailwind-merge** — utilitários para classes CSS
+## 🛠️ Stack Tecnológica
 
-## Padrões de Projeto
-- **Componentização**: Uso de componentes funcionais React
-- **Hooks**: Uso extensivo de hooks para estado e efeitos
-- **Gerenciamento de estado assíncrono**: React Query
-- **Estilização**: TailwindCSS
-- **TypeScript**: Tipagem estática em todo o projeto
+### Core
+- **React 19** - Biblioteca de interface
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool e dev server
 
-## Setup e Configuração
-1. **Clone o repositório:**
-   ```bash
-   git clone <url-do-repo>
-   cd front-end-agents
-   ```
-2. **Instale as dependências:**
-   ```bash
-   npm install
-   # ou
-   yarn install
-   ```
-3. **Inicie o servidor de desenvolvimento:**
-   ```bash
-   npm run dev
-   # ou
-   yarn dev
-   ```
+### UI/UX
+- **TailwindCSS 4** - Framework CSS utilitário
+- **Radix UI** - Componentes acessíveis
+- **Lucide React** - Ícones
+- **class-variance-authority** - Variantes de componentes
 
-## Scripts Disponíveis
-- `dev`: Inicia o servidor de desenvolvimento Vite
-- `build`: Compila o projeto para produção
-- `preview`: Visualiza o build de produção localmente
+### Gerenciamento de Estado
+- **@tanstack/react-query** - Cache e sincronização de dados
+- **React Hook Form** - Formulários
+- **Zod** - Validação de schemas
 
-## Requisitos
+### Roteamento
+- **React Router DOM 7** - Navegação SPA
+
+## 🏗️ Arquitetura
+
+```
+src/
+├── components/     # Componentes reutilizáveis
+├── pages/         # Páginas da aplicação
+├── hooks/         # Custom hooks
+├── utils/         # Utilitários
+└── types/         # Definições TypeScript
+```
+
+### Padrões
+- **Componentes Funcionais** com hooks
+- **Separação de responsabilidades** (pages vs components)
+- **TypeScript** em todo o projeto
+- **TailwindCSS** para estilização
+
+## 🚀 Setup
+
+### Pré-requisitos
 - Node.js 18+
 - npm ou yarn
 
----
+### Instalação
+```bash
+# Clone o repositório
+git clone <url-do-repo>
+cd front-end-agents
 
-> Projeto inicial para estudos e experimentação com React, Vite, Tailwind e gerenciamento de dados assíncronos. 
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
+
+### Scripts
+- `npm run dev` - Servidor de desenvolvimento
+- `npm run build` - Build para produção
+- `npm run preview` - Preview do build
+
+## 📦 Principais Dependências
+
+| Biblioteca | Versão | Propósito |
+|------------|--------|-----------|
+| React | 19.x | UI Library |
+| TailwindCSS | 4.x | Styling |
+| React Query | 5.x | Data fetching |
+| React Router | 7.x | Routing |
+| Radix UI | 2.x | Components | 
